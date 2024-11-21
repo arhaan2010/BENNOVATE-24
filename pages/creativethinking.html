@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Thinking - Sahayak</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .language-dropdown {
+            font-size: 1em;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .back-button {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            background-color: #003366; /* Slightly darker blue for contrast */
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .back-button:hover {
+            background-color: #002244; /* Hover effect */
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #004080;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <span class="title">Sahayak - Creative Thinking</span>
+            <div>
+                <select id="language-select" class="language-dropdown">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                    <option value="ta">தமிழ்</option>
+                </select>
+                <a href="/pages/skills.html" class="back-button">&larr; Back to Skill Development</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="article-content">
+
+            <!-- Introduction Section -->
+            <div class="section">
+                <h1 class="language-text" data-lang="en">Introduction to Creative Thinking</h1>
+                <h1 class="language-text" data-lang="hi" style="display: none;">रचनात्मक सोच का परिचय</h1>
+                <h1 class="language-text" data-lang="kn" style="display: none;">ಸೃಜನಾತ್ಮಕ ಚಿಂತನೆಯ ಪರಿಚಯ</h1>
+                <h1 class="language-text" data-lang="ta" style="display: none;">புதுமையான சிந்தனை அறிமுகம்</h1>
+
+                <p class="language-text" data-lang="en">
+                    Creative thinking is the ability to think in new and unconventional ways to solve problems, create opportunities, and generate innovative ideas. It is a crucial skill for personal and professional development, allowing individuals to navigate challenges with unique and effective approaches.
+                </p>
+                <p class="language-text" data-lang="hi" style="display: none;">
+                    रचनात्मक सोच नई और असामान्य तरीकों से सोचने की क्षमता है, जो समस्याओं को हल करने, अवसर बनाने और नवीन विचार उत्पन्न करने में मदद करती है। यह व्यक्तिगत और व्यावसायिक विकास के लिए एक महत्वपूर्ण कौशल है, जो व्यक्तियों को अनोखे और प्रभावी तरीकों से चुनौतियों को पार करने में सक्षम बनाता है।
+                </p>
+                <p class="language-text" data-lang="kn" style="display: none;">
+                    ಸೃಜನಾತ್ಮಕ ಚಿಂತನೆ ಎಂದರೆ ಹೊಸ ಮತ್ತು ಪ್ರತ್ಯೇಕ ಮಾರ್ಗಗಳಲ್ಲಿ ಚಿಂತಿಸಲು ಇರುವ ಸಾಮರ್ಥ್ಯ, ಇದು ಸಮಸ್ಯೆಗಳನ್ನು ಪರಿಹರಿಸಲು, ಅವಕಾಶಗಳನ್ನು ನಿರ್ಮಿಸಲು ಮತ್ತು ಹೊಸ ಆಲೋಚನೆಗಳನ್ನು ಉತ್ಪಾದಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಇದು ವೈಯಕ್ತಿಕ ಮತ್ತು ವೃತ್ತಿಪರ ಅಭಿವೃದ್ಧಿಗೆ ಅತ್ಯಂತ ಮುಖ್ಯವಾದ ಕೌಶಲ್ಯವಾಗಿದೆ, ಇದು ವ್ಯಕ್ತಿಗಳಿಗೆ ವಿಶೇಷ ಮತ್ತು ಪರಿಣಾಮಕಾರಿಯಾದ ಮಾರ್ಗಗಳ ಮೂಲಕ ಸವಾಲುಗಳನ್ನು ನಿಭಾಯಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
+                </p>
+                <p class="language-text" data-lang="ta" style="display: none;">
+                    புதுமையான சிந்தனை என்பது புதிய மற்றும் பொதுவற்ற வழிகளில் சிந்தித்து பிரச்சினைகளைத் தீர்க்கவும், வாய்ப்புகளை உருவாக்கவும், புதுமையான சிந்தனைகளை உருவாக்கவும் உதவுகிறது. இது தனிப்பட்ட மற்றும் தொழில்முறை வளர்ச்சிக்கு முக்கியமான திறனாகும், இது ஒருவருக்கு தனித்துவமான மற்றும் விளங்கிய அணுகுமுறைகளுடன் சவால்களைச் சமாளிக்க உதவும்.
+                </p>
+            </div>
+
+            <!-- Creative Problem Solving Section -->
+            <div class="section">
+                <h2 class="language-text" data-lang="en">1. Creative Problem Solving</h2>
+                <h2 class="language-text" data-lang="hi" style="display: none;">1. रचनात्मक समस्या समाधान</h2>
+                <h2 class="language-text" data-lang="kn" style="display: none;">1. ಸೃಜನಾತ್ಮಕ ಸಮಸ್ಯೆ ಪರಿಹರಿಸುವಿಕೆ</h2>
+                <h2 class="language-text" data-lang="ta" style="display: none;">1. புதுமையான பிரச்சினை தீர்வு</h2>
+
+                <p class="language-text" data-lang="en">
+                    Creative problem solving involves looking at a problem from multiple perspectives to find innovative solutions. It requires an open mind and a willingness to explore unconventional options.
+                    <br><br>
+                    **Divergent Thinking**: Generate as many potential solutions as possible without filtering.
+                    <br><br>
+                    **Convergent Thinking**: Narrow down these solutions to find the most effective one.
+                    <br><br>
+                    **Reframing Problems**: Change the way you look at the problem to discover new insights.
+                    <br><br>
+                    **Experimentation**: Try different approaches, even if they may seem unlikely to succeed.
+                </p>
+                <p class="language-text" data-lang="hi" style="display: none;">
+                    रचनात्मक समस्या समाधान में समस्या को कई दृष्टिकोणों से देखना और नवाचारी समाधान खोजना शामिल है। इसके लिए खुले मन की आवश्यकता होती है और असामान्य विकल्पों का अन्वेषण करने की इच्छा होती है।
+                    <br><br>
+                    **विभिन्न सोच**: जितने संभव हो उतने संभावित समाधानों को उत्पन्न करें, बिना छंटाई के।
+                    <br><br>
+                    **संकुचित सोच**: इन समाधानों को संकीर्ण करें ताकि सबसे प्रभावी समाधान मिल सके।
+                    <br><br>
+                    **समस्याओं को फिर से परिभाषित करना**: समस्या को देखने के तरीके को बदलें ताकि नई अंतर्दृष्टि मिल सके।
+                    <br><br>
+                    **प्रयोग**: विभिन्न दृष्टिकोणों को आजमाएं, भले ही वे सफल होने की संभावना कम लगें।
+                </p>
+                <p class="language-text" data-lang="kn" style="display: none;">
+                    ಸೃಜನಾತ್ಮಕ ಸಮಸ್ಯೆ ಪರಿಹರಿಸುವಿಕೆ ಎಂದರೆ ಸಮಸ್ಯೆಯನ್ನು ಅನೇಕ ದೃಷ್ಟಿಕೋನಗಳಿಂದ ನೋಡಿ ಹೊಸ ಪರಿಹಾರಗಳನ್ನು ಹುಡುಕುವುದು. ಇದು ಮುಕ್ತ ಮನಸ್ಸನ್ನು ಮತ್ತು ವ್ಯತ್ಯಾಸವಾದ ಆಯ್ಕೆಗಳನ್ನು ಅನ್ವೇಷಿಸಲು ಇಚ್ಛೆಯನ್ನು ಅವಶ್ಯಕಪಡುತ್ತದೆ.
+                    <br><br>
+                    **ವಿಭಿನ್ನ ಚಿಂತನೆ**: ಸಾಧ್ಯವಿರುವಷ್ಟು ಪರಿಹಾರಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡದೆ ರಚಿಸಿ.
+                    <br><br>
+                    **ಸಂಕೀರ್ಣ ಚಿಂತನೆ**: ಅತ್ಯಂತ ಪರಿಣಾಮಕಾರಿ ಪರಿಹಾರ ಕಂಡುಹಿಡಿಯಲು ಇವುಗಳನ್ನು ಸೀಮಿತಗೊಳಿಸಿ.
+                    <br><br>
+                    **ಸಮಸ್ಯೆಗಳನ್ನು ಮರುಸೃಷ್ಟಿಸು**: ಸಮಸ್ಯೆಯನ್ನು ಹೊಸ ದೃಷ್ಟಿಕೋನದಿಂದ ನೋಡಿ ಹೊಸ ಅಂಶಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.
+                    <br><br>
+                    **ಪ್ರಯೋಗಾತ್ಮಕತೆ**: ವಿಭಿನ್ನ ವಿಧಾನಗಳನ್ನು ಪ್ರಯತ್ನಿಸಿ, ಅವು ಯಶಸ್ವಿಯಾಗದಿದ್ದರೂ ಕೂಡ.
+                </p>
+                <p class="language-text" data-lang="ta" style="display: none;">
+                    புதுமையான பிரச்சினை தீர்வு என்பது பிரச்சினையை பல்வேறு கோணங்களில் இருந்து பார்த்து புதிய தீர்வுகளை கண்டுபிடிப்பது ஆகும். இது ஒரு திறந்த மனதையும் பொதுவற்ற விருப்பங்களை ஆராய்வதற்கான தயார்பாட்டையும் தேவைப்படுத்துகிறது.
+                    <br><br>
+                    **பல்வேறு சிந்தனை**: முடிந்தவரை பல்வேறு தீர்வுகளை உருவாக்குங்கள், அடக்குவதில்லாமல்.
+                    <br><br>
+                    **நெருங்கிய சிந்தனை**: மிக விளங்கிய தீர்வை கண்டுபிடிப்பதற்காக இவற்றை குறைத்துக்கொள்ளுங்கள்.
+                    <br><br>
+                    **பிரச்சினைகளை மறுசரிகோணத்தில் பாருங்கள்**: பிரச்சினையைப் புதிய பார்வையால் காண்க, மேலும் புதிய தகவல்களை அறியவும்.
+                    <br><br>
+                    **செயலாக்கம்**: பல்வேறு அணுகுமுறைகளை முயற்சி செய்யுங்கள், அவை வெற்றியடைய வாய்ப்பில்லாவிட்டாலும்.
+                </p>
+            </div>
+
+            <!-- Creative Exploration Section -->
+            <div class="section">
+                <h2 class="language-text" data-lang="en">2. Creative Exploration</h2>
+                <h2 class="language-text" data-lang="hi" style="display: none;">2. रचनात्मक अन्वेषण</h2>
+                <h2 class="language-text" data-lang="kn" style="display: none;">2. ಸೃಜನಾತ್ಮಕ ಅನ್ವೇಷಣೆ</h2>
+                <h2 class="language-text" data-lang="ta" style="display: none;">2. புதுமையான ஆராய்ச்சி</h2>
+
+                <p class="language-text" data-lang="en">
+                    Creative exploration involves the willingness to step into the unknown, experiment, and explore new possibilities. It allows for fresh perspectives that may lead to breakthrough innovations.
+                    <br><br>
+                    **Curiosity**: Stay curious and always ask questions to understand things better.
+                    <br><br>
+                    **Brainstorming**: Engage in brainstorming sessions to explore different viewpoints and solutions.
+                    <br><br>
+                    **Mind Mapping**: Visualize connections between ideas to expand on possible solutions.
+                    <br><br>
+                    **Exploration of Unconventional Ideas**: Be open to ideas that may initially seem unrealistic or far-fetched.
+                </p>
+                <p class="language-text" data-lang="hi" style="display: none;">
+                    रचनात्मक अन्वेषण में अज्ञात में कदम रखने, प्रयोग करने और नई संभावनाओं का पता लगाने की इच्छा शामिल है। यह ताज़ा दृष्टिकोण की अनुमति देता है जो महत्वपूर्ण नवाचारों की ओर ले सकता है।
+                    <br><br>
+                    **जिज्ञासा**: जिज्ञासु रहें और चीजों को बेहतर समझने के लिए हमेशा सवाल पूछें।
+                    <br><br>
+                    **मंथन**: विभिन्न दृष्टिकोणों और समाधानों का पता लगाने के लिए मंथन सत्रों में भाग लें।
+                    <br><br>
+                    **माइंड मैपिंग**: विचारों के बीच कनेक्शनों को देखने और संभावित समाधानों का विस्तार करने के लिए माइंड मैपिंग का उपयोग करें।
+                    <br><br>
+                    **असामान्य विचारों की खोज**: ऐसे विचारों के लिए खुले रहें जो प्रारंभ में अवास्तविक या अनिश्चित लग सकते हैं।
+                </p>
+                <p class="language-text" data-lang="kn" style="display: none;">
+                    ಸೃಜನಾತ್ಮಕ ಅನ್ವೇಷಣೆ ಎಂದರೆ ಅನಿಶ್ಚಿತತೆಗೆ ಹೆಜ್ಜೆಹಾಕಲು, ಪ್ರಯೋಗಿಸಲು ಮತ್ತು ಹೊಸ ಸಾಧ್ಯತೆಗಳನ್ನು ಅನ್ವೇಷಿಸಲು ಇರುವ ಸಿದ್ಧತೆ. ಇದು ಹೊಸ ದೃಷ್ಟಿಕೋನಗಳನ್ನು ನೀಡುತ್ತದೆ, ಅದು ದೊಡ್ಡಗೊಲೆ ಅನ್ವೇಷಣೆಗಳಿಗೆ ಕಾರಣವಾಗಬಹುದು.
+                    <br><br>
+                    **ಕುತೂಹಲ**: ಕುತೂಹಲವನ್ನು ಇಟ್ಟುಕೊಳ್ಳಿ ಮತ್ತು ಯಾವಾಗಲೂ ಹೆಚ್ಚು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಿ.
+                    <br><br>
+                    **ಮಂತರಣ**: ವಿಭಿನ್ನ ನೋಟಗಳನ್ನು ಮತ್ತು ಪರಿಹಾರಗಳನ್ನು ಅನ್ವೇಷಿಸಲು ಮಂತರಣ ಅಧಿವೇಶನಗಳಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳಿ.
+                    <br><br>
+                    **ಮನದ ನಕ್ಷೆ**: ಆಲೋಚನೆಗಳ ನಡುವೆ ಸಂಬಂಧಗಳನ್ನು ದೃಷ್ಟಿಸಿರಿ ಮತ್ತು ಸಾಧ್ಯ ಪರಿಹಾರಗಳನ್ನು ವಿಸ್ತರಿಸಿರಿ.
+                    <br><br>
+                    **ಅಸಾಮಾನ್ಯ ಆಲೋಚನೆಗಳ ಅನ್ವೇಷಣೆ**: ಆರಂಭದಲ್ಲಿ ಅವೈಜ್ಞಾನಿಕ ಅಥವಾ ದೂರದೃಷ್ಟಿ ಎಂದು ತೋರುವ ಆಲೋಚನೆಗಳಿಗೆ ಮುಕ್ತವಾಗಿರಿ.
+                </p>
+                <p class="language-text" data-lang="ta" style="display: none;">
+                    புதுமையான ஆராய்ச்சி என்பது அறியப்படாததைப் புரிந்து கொள்ள ஆர்வத்துடனும் முயற்சி செய்து புதிய சாத்தியங்களை ஆராய்வதற்கான தயார்பாடு ஆகும். இது புதிய பார்வைகளுக்கு வழிவகுக்கிறது, அது முன்னணி நவீனத்துக்கு வழிவகுக்கலாம்.
+                    <br><br>
+                    **ஆர்வம்**: ஆர்வமாக இருங்கள் மற்றும் எப்பொழுதும் மேலும் விளங்குதல் கட்சியை ஏற்கவேண்டும்.
+                    <br><br>
+                    **சமுதாய கலந்துரையாடல்**: பல்வேறு கருத்துக்கள் மற்றும் தீர்வுகளை ஆராய்தலை முன்னேற்றுங்கள்.
+                    <br><br>
+                    **மனம் வரைபடம்**: கருத்துக்களுக்கிடையில் தொடர்புகளை காண்க மற்றும் சாத்திய தீர்வுகளை விரிவாக்குங்கள்.
+                    <br><br>
+                    **அலங்கோலமான கருத்துக்களை ஆராய்ச்சி**: ஆரம்பத்தில் நியாயமற்ற அல்லது தொலைநோக்கத்துடன் தோன்றும் கருத்துக்களுக்கு திறந்திருக்க வேண்டும்.
+                </p>
+            </div>
+
+            <!-- Creative Collaboration Section -->
+            <div class="section">
+                <h2 class="language-text" data-lang="en">3. Creative Collaboration</h2>
+                <h2 class="language-text" data-lang="hi" style="display: none;">3. रचनात्मक सहयोग</h2>
+                <h2 class="language-text" data-lang="kn" style="display: none;">3. ಸೃಜನಾತ್ಮಕ ಸಹಕಾರ</h2>
+                <h2 class="language-text" data-lang="ta" style="display: none;">3. புதுமையான ஒத்துழைப்பு</h2>
+
+                <p class="language-text" data-lang="en">
+                    Creative collaboration is about working together in a group to generate innovative ideas. It involves harnessing the power of different perspectives to create something unique and effective.
+                    <br><br>
+                    **Teamwork**: Working effectively in a team helps combine individual skills and knowledge to generate creative solutions.
+                    <br><br>
+                    **Active Listening**: Listening to others' ideas and building upon them is an essential part of collaboration.
+                    <br><br>
+                    **Open-Mindedness**: Be open to suggestions, feedback, and other viewpoints that may improve your idea.
+                    <br><br>
+                    **Positive Attitude**: Maintain a positive and encouraging environment to help foster creativity in others.
+                </p>
+                <p class="language-text" data-lang="hi" style="display: none;">
+                    रचनात्मक सहयोग का मतलब समूह में मिलकर काम करना और नवीन विचार उत्पन्न करना है। इसमें विभिन्न दृष्टिकोणों की शक्ति का उपयोग करके कुछ अनोखा और प्रभावी बनाना शामिल है।
+                    <br><br>
+                    **टीमवर्क**: टीम में प्रभावी ढंग से काम करना व्यक्तिगत कौशल और ज्ञान को जोड़ने में मदद करता है ताकि रचनात्मक समाधान उत्पन्न हो सके।
+                    <br><br>
+                    **सक्रिय सुनना**: दूसरों के विचारों को सुनना और उन्हें आगे बढ़ाना सहयोग का एक आवश्यक हिस्सा है।
+                    <br><br>
+                    **खुले विचार**: सुझावों, प्रतिक्रियाओं, और अन्य दृष्टिकोणों के लिए खुले रहें जो आपके विचार को सुधार सकते हैं।
+                    <br><br>
+                    **सकारात्मक दृष्टिकोण**: एक सकारात्मक और प्रोत्साहित करने वाला वातावरण बनाए रखें ताकि दूसरों में रचनात्मकता को बढ़ावा मिले।
+                </p>
+                <p class="language-text" data-lang="kn" style="display: none;">
+                    ಸೃಜನಾತ್ಮಕ ಸಹಕಾರ ಎಂದರೆ ಗುಂಪಿನಲ್ಲಿ ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡುವುದು ಮತ್ತು ಹೊಸ ಆಲೋಚನೆಗಳನ್ನು ರಚಿಸುವುದು. ಇದರಲ್ಲಿ ವಿಭಿನ್ನ ದೃಷ್ಟಿಕೋನಗಳ ಶಕ್ತಿಯನ್ನು ಬಳಸಿಕೊಂಡು ವಿಶೇಷ ಮತ್ತು ಪರಿಣಾಮಕಾರಿಯಾದುದನ್ನು ನಿರ್ಮಿಸುವುದು ಸೇರಿದೆ.
+                    <br><br>
+                    **ಸಹಕಾರ**: ತಂಡದಲ್ಲಿ ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಕೆಲಸ ಮಾಡುವುದರಿಂದ ವೈಯಕ್ತಿಕ ಕೌಶಲ್ಯಗಳು ಮತ್ತು ಜ್ಞಾನವನ್ನು ಸಂಯೋಜಿಸಿ ಸೃಜನಾತ್ಮಕ ಪರಿಹಾರಗಳನ್ನು ರಚಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
+                    <br><br>
+                    **ಸಕ್ರಿಯ ಶ್ರವಣ**: ಇತರರ ಆಲೋಚನೆಗಳನ್ನು ಕೇಳುವುದು ಮತ್ತು ಅವುಗಳನ್ನು ವಿಸ್ತರಿಸುವುದು ಸಹಕಾರದ ಮುಖ್ಯ ಭಾಗವಾಗಿದೆ.
+                    <br><br>
+                    **ಮುಕ್ತ ಮನಸ್ಸು**: ಸಲಹೆಗಳು, ಪ್ರತಿಕ್ರಿಯೆಗಳು, ಮತ್ತು ಇತರ ದೃಷ್ಟಿಕೋನಗಳಿಗೆ ಮುಕ್ತವಾಗಿರಿ, ಅದು ನಿಮ್ಮ ಆಲೋಚನೆಗೆ ಉತ್ತಮವಾಗಿ ಆಗಬಹುದು.
+                    <br><br>
+                    **ಸಕಾರಾತ್ಮಕ ಮನೋಭಾವ**: ಇತರರಲ್ಲಿಯೂ ಸೃಜನಾತ್ಮಕತೆಯನ್ನು ಪ್ರೇರೇಪಿಸಲು ಸಹಾಯ ಮಾಡಲು ಪ್ರೋತ್ಸಾಹಕರ ಮತ್ತು ಪ್ರೋತ್ಸಾಹದ ವಾತಾವರಣವನ್ನು ಉಳಿಸಿ.
+                </p>
+                <p class="language-text" data-lang="ta" style="display: none;">
+                    புதுமையான ஒத்துழைப்பு என்பது குழுவில் சேர்ந்து புதிய சிந்தனைகளை உருவாக்குவதாகும். இது பல்வேறு பார்வைகளின் சக்தியைப் பயன்படுத்தி ஏதாவது தனித்துவமானதும் விளங்கியதும் உருவாக்குவதைக் குறிக்கிறது.
+                    <br><br>
+                    **குழு வேலை**: ஒரு குழுவில் விளங்கிய வகையில் வேலை செய்வது தனிப்பட்ட திறன்களையும் அறிவையும் சேர்க்க உதவுகிறது மற்றும் புதுமையான தீர்வுகளை உருவாக்குகிறது.
+                    <br><br>
+                    **செயல்முறையான கேட்பது**: பிறரின் சிந்தனைகளைக் கேட்டு அவற்றை விரிவாக்குவது ஒத்துழைப்பின் முக்கிய அங்கமாகும்.
+                    <br><br>
+                    **திறந்த மனம்**: பரிந்துரைகள், கருத்துக்கள் மற்றும் பிற பார்வைகளுக்கு திறந்தவையாக இருங்கள், அவை உங்கள் சிந்தனையை மேம்படுத்தலாம்.
+                    <br><br>
+                    **நலமான அணுகுமுறை**: மற்றவர்களில் புதுமையை மேம்படுத்த ஒரு நலமான மற்றும் ஊக்குவிப்பான சூழலை பராமரிக்க வேண்டும்.
+                </p>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sahayak. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('language-select').addEventListener('change', function () {
+            const selectedLanguage = this.value;
+            document.querySelectorAll('.language-text').forEach(function (element) {
+                if (element.dataset.lang === selectedLanguage) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
