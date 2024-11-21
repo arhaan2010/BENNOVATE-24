@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Management - Sahayak</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .language-dropdown {
+            font-size: 1em;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .back-button {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            background-color: #003366;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .back-button:hover {
+            background-color: #002244;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #004080;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <span class="title">Sahayak - Financial Management</span>
+            <div>
+                <select id="language-select" class="language-dropdown">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                    <option value="ta">தமிழ்</option>
+                </select>
+                <a href="/pages/Teaching Business.html" class="back-button">&larr; Back to Teaching Business</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="article-content">
+            <!-- Introduction Section -->
+            <div class="section language-text" data-lang="en">
+                <h1>Introduction to Financial Management</h1>
+                <p>Financial management is an essential skill that everyone needs to master, regardless of their occupation or stage in life. It involves organizing, planning, and controlling one's finances to ensure security and growth. Proper financial management helps individuals achieve their life goals, live comfortably, and be prepared for unexpected expenses.</p>
+            </div>
+            <div class="section language-text" data-lang="hi" style="display: none;">
+                <h1>वित्तीय प्रबंधन का परिचय</h1>
+                <p>वित्तीय प्रबंधन एक आवश्यक कौशल है जिसे सभी को सीखना चाहिए, चाहे उनका व्यवसाय या जीवन का कोई भी चरण हो। इसमें अपनी वित्तीय स्थिति को संगठित करना, योजना बनाना, और नियंत्रित करना शामिल है ताकि सुरक्षा और विकास सुनिश्चित हो सके।</p>
+            </div>
+            <div class="section language-text" data-lang="kn" style="display: none;">
+                <h1>ಹಣಕಾಸಿನ ನಿರ್ವಹಣೆಯ ಪರಿಚಯ</h1>
+                <p>ಹಣಕಾಸಿನ ನಿರ್ವಹಣೆ ಪ್ರತಿಯೊಬ್ಬರೂ ಆಯಾ ವೃತ್ತಿ ಅಥವಾ ಜೀವನದ ಹಂತಕ್ಕೂ ಕಲಿಯಬೇಕಾದ ಕೌಶಲ್ಯವಾಗಿದೆ. ಇದರಲ್ಲಿ ತನ್ನ ಹಣಕಾಸನ್ನು ಸಂಘಟಿಸುವುದು, ಯೋಜಿಸುವುದು ಮತ್ತು ನಿಯಂತ್ರಿಸುವುದು ಸೇರಿವೆ, ಇದು ಭದ್ರತೆ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಖಚಿತಪಡಿಸುತ್ತದೆ.</p>
+            </div>
+            <div class="section language-text" data-lang="ta" style="display: none;">
+                <h1>நிதி மேலாண்மையின் அறிமுகம்</h1>
+                <p>நிதி மேலாண்மை என்பது அனைத்து தரப்பு நபர்களும், அவர்களின் தொழில் துறையோ அல்லது வாழ்க்கை நிலையோ எந்த நிலை என்பதையும் பொருட்படுத்தாமல் கற்றுக்கொள்ள வேண்டிய ஒரு முக்கிய திறன் ஆகும். இதில் நிதி பணிகளை ஒழுங்குபடுத்துதல், திட்டமிடல், மற்றும் கட்டுப்படுத்துதல் போன்றவை அடங்கும், இது பாதுகாப்பையும் வளர்ச்சியையும் உறுதி செய்யும்.</p>
+            </div>
+
+            <!-- Budgeting Section -->
+            <div class="section language-text" data-lang="en">
+                <h2>1. Budgeting</h2>
+                <p>Budgeting is the cornerstone of sound financial management. A well-crafted budget helps track income and expenses, ensuring that you live within your means. It allows you to identify where your money is going and make adjustments to maximize savings and achieve your financial goals.</p>
+                <ul>
+                    <li><strong>Identify Income:</strong> Include all sources of income, such as salary, freelance work, and passive income like interest or dividends.</li>
+                    <li><strong>Track Expenses:</strong> Categorize your expenses into fixed (rent, utilities) and variable (entertainment, dining out).</li>
+                    <li><strong>Set Financial Goals:</strong> Determine what you want to achieve, such as paying off debt, saving for a vacation, or building an emergency fund.</li>
+                    <li><strong>Allocate Resources:</strong> Ensure that every dollar has a purpose—prioritize needs over wants.</li>
+                    <li><strong>Adjust as Needed:</strong> Revisit your budget regularly and make adjustments to accommodate changes in income or expenses.</li>
+                </ul>
+            </div>
+            <div class="section language-text" data-lang="hi" style="display: none;">
+                <h2>1. बजट बनाना</h2>
+                <p>बजट बनाना वित्तीय प्रबंधन का मूल है। एक अच्छी तरह से तैयार किया गया बजट आय और खर्चों को ट्रैक करने में मदद करता है, जिससे यह सुनिश्चित होता है कि आप अपनी सीमाओं में रहकर खर्च करें।</p>
+                <ul>
+                    <li><strong>आय की पहचान करें:</strong> आय के सभी स्रोतों को शामिल करें, जैसे वेतन, फ्रीलांस काम, और ब्याज या डिविडेंड जैसी निष्क्रिय आय।</li>
+                    <li><strong>खर्चों को ट्रैक करें:</strong> अपने खर्चों को स्थिर (किराया, उपयोगिता) और परिवर्तनीय (मनोरंजन, बाहर भोजन करना) में विभाजित करें।</li>
+                    <li><strong>वित्तीय लक्ष्य निर्धारित करें:</strong> निर्धारित करें कि आप क्या प्राप्त करना चाहते हैं, जैसे ऋण चुकाना, अवकाश के लिए बचत करना, या आपातकालीन निधि बनाना।</li>
+                    <li><strong>संसाधनों को आवंटित करें:</strong> सुनिश्चित करें कि प्रत्येक रुपये का एक उद्देश्य है—आवश्यकताओं को इच्छाओं पर प्राथमिकता दें।</li>
+                    <li><strong>आवश्यकतानुसार समायोजन करें:</strong> अपने बजट की नियमित रूप से समीक्षा करें और आय या खर्चों में बदलाव को समायोजित करें।</li>
+                </ul>
+            </div>
+            <div class="section language-text" data-lang="kn" style="display: none;">
+                <h2>1. ಬಜೆಟ್</h2>
+                <p>ಬಜೆಟ್ ಹಾಕುವುದು ಹಣಕಾಸಿನ ನಿರ್ವಹಣೆಯ ಮೂಲಭೂತ ಭಾಗವಾಗಿದೆ. ಚೆನ್ನಾಗಿ ರೂಪಿಸಲಾದ ಬಜೆಟ್ ಆದಾಯ ಮತ್ತು ಖರ್ಚುಗಳನ್ನು ಹಿಂಬಾಲಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.</p>
+                <ul>
+                    <li><strong>ಆದಾಯವನ್ನು ಗುರುತಿಸಿ:</strong> ವೇತನ, ಫ್ರೀಲಾನ್ಸ್ ಕೆಲಸ ಮತ್ತು ಬಡ್ಡಿ ಅಥವಾ ಡಿವಿಡೆಂಡ್‌ಗಳಂತಹ ನಿರ್ಧಿಷ್ಟ ಆದಾಯದಂತಹ ಎಲ್ಲಾ ಆದಾಯ ಮೂಲಗಳನ್ನು ಸೇರಿಸಿ.</li>
+                    <li><strong>ಖರ್ಚುಗಳನ್ನು ಹಿಂಬಾಲಿಸಿ:</strong> ನಿಮ್ಮ ಖರ್ಚುಗಳನ್ನು ಸ್ಥಿರ (ಭಾಡಿ, ಉಪಯುಕ್ತತೆಗಳು) ಮತ್ತು ಬದಲಾಗುವ (ಮನರಂಜನೆ, ಹೊರಗೊಮ್ಮಲು) ಎಂದು ವರ್ಗೀಕರಿಸಿ.</li>
+                    <li><strong>ಹಣಕಾಸಿನ ಗುರಿಗಳನ್ನು ಹೊಂದಿಸಿ:</strong> ನೀವು ಏನು ಸಾಧಿಸಬೇಕೆಂದು ನಿರ್ಧರಿಸಿ, ಉದಾಹರಣೆಗೆ ಸಾಲವನ್ನು ತೀರಿಸೋದು, ರಜೆಗೆ ಉಳಿತಾಯ ಮಾಡೋದು.</li>
+                    <li><strong>ಸಂಪನ್ಮೂಲಗಳನ್ನು ಹಂಚಿಕೆ ಮಾಡಿ:</strong> ಪ್ರತಿಯೊಂದು ರೂ.ಗೆ ಒಂದು ಉದ್ದೇಶವಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ—ಬಯಕೆಗಳಿಗಿಂತ ಅಗತ್ಯಗಳನ್ನು ಮೊದಲಿಗರಾಗಿ ಗುರಿಯಿಟ್ಟು.</li>
+                    <li><strong>ಆವಶ್ಯಕತೆಯಾದರೆ ಹೊಂದಾಣಿಕೆ ಮಾಡಿ:</strong> ಬಜೆಟ್ ಅನ್ನು ನಿಯಮಿತವಾಗಿ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಬದಲಾವಣೆಗಳಿಗೆ ಹೊಂದಿಸಿಕೊಳ್ಳಿ.</li>
+                </ul>
+            </div>
+            <div class="section language-text" data-lang="ta" style="display: none;">
+                <h2>1. பட்ஜெட்டிங்</h2>
+                <p>பட்ஜெட்டிங் என்பது நிதி மேலாண்மையின் முக்கியப் பகுதியாகும். நன்றாக வடிவமைக்கப்பட்ட பட்ஜெட் வருமானம் மற்றும் செலவுகளை கண்காணிக்க உதவுகிறது.</p>
+                <ul>
+                    <li><strong>வருமானத்தை அடையாளம் காணவும்:</strong> சம்பளம், வெளிப்பணி வேலை, வட்டி அல்லது பங்குகளுடன் கூடிய வருமானம் போன்ற அனைத்து மூலங்களையும் சேர்த்துக்கொள்ளவும்.</li>
+                    <li><strong>செலவுகளை கண்காணிக்கவும்:</strong> உங்கள் செலவுகளை நிரந்தர (வாடகை, பயன்பாடுகள்) மற்றும் மாற்றமாவதான (பொழுதுபோக்கு, வெளியே உணவு) என்று வகைப்படுத்தவும்.</li>
+                    <li><strong>நிதி குறிக்கோள்களை அமைக்கவும்:</strong> கடன்தீர்வு, விடுமுறை சேமிப்பு போன்றவற்றைத் தீர்மானிக்கவும்.</li>
+                    <li><strong>வளங்களை ஒதுக்குங்கள்:</strong> ஒவ்வொரு ரூபாயுக்கும் ஒரு நோக்கம் இருப்பதை உறுதிப்படுத்தவும்—தேவைகளை விருப்பங்களை விட முன்னுரிமைப்படுத்தவும்.</li>
+                    <li><strong>தேவையின்படி சரிசெய்யவும்:</strong> உங்கள் பட்ஜெட்டை அடிக்கடி பரிசீலித்து மாற்றங்களைச் செய்யவும்.</li>
+                </ul>
+            </div>
+
+            <!-- Saving Section -->
+            <div class="section language-text" data-lang="en">
+                <h2>2. Saving</h2>
+                <p>Saving money is fundamental to financial stability and building wealth over time. By setting aside a portion of your income, you can prepare for both short-term needs and long-term goals.</p>
+                <ul>
+                    <li><strong>Emergency Fund:</strong> An emergency fund is a safety net that covers unexpected expenses such as medical bills, car repairs, or sudden job loss. Aim to save at least three to six months of living expenses.</li>
+                    <li><strong>Goal-Based Savings:</strong> Save for specific goals such as a vacation, buying a car, or a down payment on a house.</li>
+                    <li><strong>Retirement Savings:</strong> Setting aside money for your future, preferably in tax-advantaged accounts such as a 401(k) or an IRA, is crucial for ensuring comfort in your later years.</li>
+                </ul>
+            </div>
+            <div class="section language-text" data-lang="hi" style="display: none;">
+                <h2>2. बचत</h2>
+                <p>बचत वित्तीय स्थिरता और समय के साथ संपत्ति बनाने के लिए महत्वपूर्ण है। अपनी आय का एक हिस्सा अलग रखकर, आप अपनी अल्पकालिक आवश्यकताओं और दीर्घकालिक लक्ष्यों के लिए तैयारी कर सकते हैं।</p>
+                <ul>
+                    <li><strong>आपातकालीन कोष:</strong> एक आपातकालीन कोष अप्रत्याशित खर्चों जैसे चिकित्सा बिल, कार की मरम्मत, या अचानक नौकरी छूटने के लिए सुरक्षा प्रदान करता है। कम से कम तीन से छह महीने के जीवन-यापन खर्च को बचाने का लक्ष्य रखें।</li>
+                    <li><strong>लक्ष्य-आधारित बचत:</strong> छुट्टी, कार खरीदने, या घर के लिए डाउन पेमेंट जैसे विशेष लक्ष्यों के लिए बचत करें।</li>
+                    <li><strong>सेवानिवृत्ति बचत:</strong> अपने भविष्य के लिए धन अलग रखना, अधिमानतः कर-मुक्त खातों जैसे 401(k) या IRA में, आपके बाद के वर्षों में आराम सुनिश्चित करने के लिए महत्वपूर्ण है।</li>
+                </ul>
+            </div>
+            <div class="section language-text" data-lang="kn" style="display: none;">
+                <h2>2. ಉಳಿತಾಯ</h2>
+                <p>ಉಳಿತಾಯವು ಹಣಕಾಸಿನ ಸ್ಥಿರತೆ ಮತ್ತು ಸಮಯದೊಂದಿಗೆ ಸಂಪತ್ತನ್ನು ನಿರ್ಮಿಸಲು ಅತಿ ಮುಖ್ಯವಾದುದು. ನಿಮ್ಮ ಆದಾಯದ ಒಂದು ಭಾಗವನ್ನು ಬೇರ್ಪಡಿಸುವುದರಿಂದ, ನೀವು ಕೇವಲ ತುರ್ತು ಅವಶ್ಯಕತೆಗಳಿಗೆ ಮತ್ತು ದೀರ್ಘಕಾಲೀನ ಗುರಿಗಳಿಗೆ ಸಿದ್ಧರಾಗಿ ಇರುವಿರಿ.</p>
+                <ul>
+                    <li><strong>ತುರ್ತು ನಿಧಿ:</strong> ತುರ್ತು ನಿಧಿ ಅಪ್ರತ್ಯಾಶಿತ ವೆಚ್ಚಗಳನ್ನು, ಉದಾಹರಣೆಗೆ ವೈದ್ಯಕೀಯ ಬಿಲ್‌ಗಳು, ಕಾರು ದುರಸ್ತಿ, ಅಥವಾ ಕೆಲಸ ಕಳೆದುಕೊಂಡು ಬಿಡುವುದು ಮುಂತಾದುವನ್ನು ಆವರಿಸುತ್ತದೆ. ಕನಿಷ್ಠ ಮೂರುರಿಂದ ಆರು ತಿಂಗಳವರೆಗೆ ಖರ್ಚುಗಳನ್ನು ಉಳಿಸುವ ಗುರಿ ಇಟ್ಟುಕೊಳ್ಳಿ.</li>
+                    <li><strong>ಗುರಿ-ಆಧಾರಿತ ಉಳಿತಾಯ:</strong> ರಜೆಗೆ ಹೋಗುವುದು, ಕಾರು ಖರೀದಿಸುವುದು, ಅಥವಾ ಮನೆ ಖರೀದಿಗಾಗಿ ಡೌನ್ ಪೇಮೆಂಟ್ ಮಾಡುವುದು ಮುಂತಾದ ಗುರಿಗಳಿಗೆ ಉಳಿತಾಯ ಮಾಡಿ.</li>
+                    <li><strong>ನಿವೃತ್ತಿ ಉಳಿತಾಯ:</strong> ನಿಮ್ಮ ಭವಿಷ್ಯಕ್ಕಾಗಿ ಹಣವನ್ನು ಬೇರ್ಪಡಿಸಿ, ವಿಶೇಷವಾಗಿ ತೆರಿಗೆ-ಅನುಕೂಲಿತ ಖಾತೆಗಳು, ಉದಾಹರಣೆಗೆ 401(k) ಅಥವಾ IRA, ದೀರ್ಘಕಾಲಿಕ ನೆಮ್ಮದಿ ಖಚಿತಪಡಿಸಲು.</li>
+                </ul>
+            </div>
+            <div class="section language-text" data-lang="ta" style="display: none;">
+                <h2>2. சேமிப்பு</h2>
+                <p>சேமிப்பு என்பது நிதி நிலைத்தன்மைக்கு மற்றும் காலப்போக்கில் செல்வத்தை உருவாக்குவதற்கான அடிப்படை அம்சமாகும். உங்கள் வருமானத்தின் ஒரு பகுதியை ஒதுக்குவதன் மூலம், குறுகிய கால தேவைகள் மற்றும் நீண்டகால இலக்குகளுக்கான தயார் செய்யலாம்.</p>
+                <ul>
+                    <li><strong>அவசர நிதி:</strong> அவசர நிதி என்பது மருத்துவ செலவுகள், கார் பராமரிப்பு, அல்லது பணியிழப்பு போன்ற எதிர்பாராத செலவுகளுக்கு ஒரு பாதுகாப்பு வலை ஆகும். வாழ்வதற்கான செலவுகளை குறைந்தது மூன்று முதல் ஆறு மாதங்களுக்கு சேமிக்கும் இலக்கை நோக்கி செயல்படுங்கள்.</li>
+                    <li><strong>இலக்கு-அடிப்படையிலான சேமிப்பு:</strong> விடுமுறை, கார் வாங்குதல், அல்லது வீடு வாங்குதல் போன்ற குறிப்பிட்ட இலக்குகளுக்கான சேமிப்புகளை செய்யுங்கள்.</li>
+                    <li><strong>ஓய்வு நேர சேமிப்பு:</strong> எதிர்காலத்திற்காக, குறிப்பாக வரிவிலக்கு உண்டான கணக்குகள், உதாரணமாக 401(k) அல்லது IRA போன்றவற்றில் பணத்தை ஒதுக்குவது உங்கள் வாழ்வின் பின்னியாண்டுகளில் நிம்மதியை உறுதி செய்வதற்கு முக்கியமானது.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sahayak. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('language-select').addEventListener('change', function () {
+            const selectedLanguage = this.value;
+            document.querySelectorAll('.language-text').forEach(function (element) {
+                if (element.dataset.lang === selectedLanguage) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        });
+
+        // Ensure only English is visible by default on page load
+        window.addEventListener('load', function () {
+            const selectedLanguage = document.getElementById('language-select').value;
+            document.querySelectorAll('.language-text').forEach(function (element) {
+                if (element.dataset.lang === selectedLanguage) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

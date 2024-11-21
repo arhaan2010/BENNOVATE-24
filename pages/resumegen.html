@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator - Sahayak</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003366;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sahayak - Resume Generator</h1>
+    </header>
+    <main>
+        <div id="language-select">
+            <label for="language">Select Language / भाषा चुनें:</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+            </select>
+        </div>
+        <form id="resume-form">
+            <div class="form-group">
+                <label data-lang-en="Full Name" data-lang-hi="पूरा नाम">Full Name / पूरा नाम:</label>
+                <input type="text" id="fullName" required>
+            </div>
+            <div class="form-group">
+                <label data-lang-en="Email" data-lang-hi="ईमेल">Email / ईमेल:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label data-lang-en="Phone Number" data-lang-hi="फोन नंबर">Phone Number / फोन नंबर:</label>
+                <input type="text" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label data-lang-en="Education" data-lang-hi="शिक्षा">Education / शिक्षा:</label>
+                <textarea id="education" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label data-lang-en="Work Experience" data-lang-hi="कार्य अनुभव">Work Experience / कार्य अनुभव:</label>
+                <textarea id="experience" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label data-lang-en="Skills" data-lang-hi="कौशल">Skills / कौशल:</label>
+                <textarea id="skills" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label data-lang-en="Upload Photo" data-lang-hi="फोटो अपलोड करें">Upload Photo / फोटो अपलोड करें:</label>
+                <input type="file" id="photo" accept="image/*">
+            </div>
+            <button type="button" onclick="generatePDF()">Generate PDF</button>
+        </form>
+    </main>
+
+    <script>
+        // Language change function
+        function changeLanguage() {
+            const selectedLanguage = document.getElementById('language').value;
+            document.querySelectorAll('[data-lang-en]').forEach(function (element) {
+                if (selectedLanguage === 'hi') {
+                    element.textContent = element.getAttribute('data-lang-hi');
+                } else {
+                    element.textContent = element.getAttribute('data-lang-en');
+                }
+            });
+        }
+
+        // Function to generate PDF
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const education = document.getElementById('education').value;
+            const experience = document.getElementById('experience').value;
+            const skills = document.getElementById('skills').value;
+            const photo = document.getElementById('photo').files[0];
+
+            // Add title
+            doc.setFontSize(16);
+            doc.text('Resume', 105, 20, null, null, 'center');
+
+            // Add photo if uploaded
+            if (photo) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imgData = e.target.result;
+                    doc.addImage(imgData, 'JPEG', 150, 20, 40, 40);
+                    addResumeContent(doc, fullName, email, phone, education, experience, skills);
+                };
+                reader.readAsDataURL(photo);
+            } else {
+                addResumeContent(doc, fullName, email, phone, education, experience, skills);
+            }
+        }
+
+        // Function to add resume content
+        function addResumeContent(doc, fullName, email, phone, education, experience, skills) {
+            doc.setFontSize(12);
+            doc.text(`Full Name: ${fullName}`, 10, 70);
+            doc.text(`Email: ${email}`, 10, 80);
+            doc.text(`Phone Number: ${phone}`, 10, 90);
+            doc.text('Education:', 10, 100);
+            doc.text(education, 10, 110);
+            doc.text('Work Experience:', 10, 130);
+            doc.text(experience, 10, 140);
+            doc.text('Skills:', 10, 160);
+            doc.text(skills, 10, 170);
+
+            doc.save(`${fullName}_Resume.pdf`);
+        }
+    </script>
+</body>
+</html>
