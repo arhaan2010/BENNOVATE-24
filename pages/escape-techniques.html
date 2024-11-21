@@ -14,42 +14,41 @@
             line-height: 1.6;
         }
         header {
-    background-color: #004080; /* Blue background */
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-right: 10px; /* Add spacing on the right */
-}
-
-.back-button {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    background-color: #003366; /* Slightly darker blue for contrast */
-    padding: 8px 12px;
-    border-radius: 5px;
-    margin-left: 10px; /* Add spacing on the left */
-}
-
-.back-button:hover {
-    background-color: #002244; /* Hover effect */
-    text-decoration: underline;
-}
-
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .language-dropdown {
+            font-size: 1em;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .back-button {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            background-color: #003366;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #002244;
+        }
         main {
             max-width: 800px;
             margin: auto;
@@ -70,45 +69,140 @@
     <header>
         <div class="header-content">
             <span class="title">Sahayak</span>
+            <select id="language-select" class="language-dropdown">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+                <option value="kn">ಕನ್ನಡ</option>
+                <option value="ta">தமிழ்</option>
+            </select>
             <a href="/pages/self-defense.html" class="back-button">&larr; Back to Self Defense</a>
         </div>
     </header>
     
-    
     <main>
         <img src="defensetechnique.webp" alt="Escape Techniques">
-        <p>
-            Escape techniques are critical self-defense skills that help individuals free themselves from an assailant’s grip or avoid potentially dangerous situations. These techniques emphasize quick thinking, agility, and targeting the attacker’s weak points.
-        </p>
-        <h2>Core Principles of Escape Techniques</h2>
-        <p>
-            The goal of escape techniques is to create an opportunity to distance yourself from the attacker. Here are some principles:
-        </p>
-        <ul>
-            <li><strong>Leverage and Angles:</strong> Understanding how to use body leverage to break free from holds or grips.</li>
-            <li><strong>Target Vulnerable Areas:</strong> Focus on sensitive areas like the eyes, nose, throat, or groin to disorient the attacker.</li>
-            <li><strong>Distractions:</strong> Use verbal commands or objects in your surroundings to create opportunities for escape.</li>
-        </ul>
-        <h2>Practical Techniques</h2>
-        <p>
-            Some practical escape techniques include:
-        </p>
-        <ul>
-            <li><strong>Wrist Release:</strong> Rotate your wrist against the attacker's thumb to break free.</li>
-            <li><strong>Bear Hug Escape:</strong> Use your elbows to strike the attacker’s stomach or step on their foot to loosen their hold.</li>
-            <li><strong>Clothing Grab Defense:</strong> Pull the attacker’s hands away or strike vulnerable points to escape quickly.</li>
-        </ul>
-        <h2>Safety Tips</h2>
-        <p>
-            In addition to techniques, being aware of your surroundings and maintaining a confident posture can deter potential threats. Practice these techniques regularly to build confidence and reflexes.
-        </p>
+        <div id="article-content">
+            <p class="language-text" data-lang="en">
+                Escape techniques are critical self-defense skills that help individuals free themselves from an assailant’s grip or avoid potentially dangerous situations. These techniques emphasize quick thinking, agility, and targeting the attacker’s weak points. Understanding these principles can significantly increase your chances of staying safe and avoiding harm.
+            </p>
+            <p class="language-text" data-lang="hi" style="display: none;">
+                भागने की तकनीकें आत्मरक्षा की महत्वपूर्ण तकनीकें हैं, जो किसी हमलावर की पकड़ से बचने में मदद करती हैं। इन तकनीकों में त्वरित सोच, चुस्ती और हमलावर के कमजोर बिंदुओं पर ध्यान केंद्रित करना शामिल है। इन सिद्धांतों को समझने से सुरक्षित रहने और नुकसान से बचने की आपकी संभावना बढ़ सकती है।
+            </p>
+            <p class="language-text" data-lang="kn" style="display: none;">
+                ಬೇಲಿ ತಂತ್ರಗಳು ಸ್ವಯಂ ರಕ್ಷಣೆಯಲ್ಲಿ ಅತ್ಯಂತ ಮುಖ್ಯವಾದವು, ಅಟ್ಟಹಾಸವನ್ನು ತಪ್ಪಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಈ ತಂತ್ರಗಳು ವೇಗದ ಚಿಂತನೆ, ಚಪಲತೆ ಮತ್ತು ಹಲ್ಲೆಗಾರರ ದುರ್ಬಲತೆಯ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸುತ್ತವೆ. ಈ ತತ್ತ್ವಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದರಿಂದ ನೀವು ಸುರಕ್ಷಿತವಾಗಿರುವ ಮತ್ತು ಹಾನಿಯಿಂದ ತಪ್ಪಿಸಿಕೊಳ್ಳುವ ಸಾಧ್ಯತೆಗಳನ್ನು ಹೆಚ್ಚಿಸಬಹುದು.
+            </p>
+            <p class="language-text" data-lang="ta" style="display: none;">
+                தப்பிக்கும் நுட்பங்கள் ஒரு தாக்குதலாளரின் பிடியில் இருந்து விடுபடவும், அச்சுறுத்தல்களை தவிர்க்கவும் உதவும் முக்கிய தற்காப்பு திறன்களாகும். இந்த நுட்பங்கள் விரைவு சிந்தனை, கூர்மை மற்றும் தாக்குதலாளரின் பலவீன புள்ளிகளை குறிவைக்கும் திறன்களை மிகைப்படுத்துகின்றன. இந்தக் கொள்கைகளைப் புரிந்து கொள்வதன் மூலம், நீங்கள் பாதுகாப்பாக இருக்கும் வாய்ப்பு அதிகரிக்கப்படுகிறது.
+            </p>
+
+            <h2 class="language-text" data-lang="en">Core Principles of Escape Techniques</h2>
+            <h2 class="language-text" data-lang="hi" style="display: none;">भागने की तकनीकों के मूल सिद्धांत</h2>
+            <h2 class="language-text" data-lang="kn" style="display: none;">ತಂತ್ರಗಳ ಮೂಲ ತತ್ವಗಳು</h2>
+            <h2 class="language-text" data-lang="ta" style="display: none;">தப்பிக்கும் நுட்பங்களின் அடிப்படைத் தத்துவங்கள்</h2>
+
+            <p class="language-text" data-lang="en">
+                The goal of escape techniques is to create an opportunity to distance yourself from the attacker. Here are some core principles that form the foundation of effective escape techniques:
+            </p>
+            <p class="language-text" data-lang="hi" style="display: none;">
+                भागने की तकनीकों का लक्ष्य हमलावर से दूरी बनाना है। यहां कुछ मूल सिद्धांत दिए गए हैं जो प्रभावी भागने की तकनीकों का आधार बनाते हैं:
+            </p>
+            <p class="language-text" data-lang="kn" style="display: none;">
+                ತಂತ್ರಗಳ ಮುಖ್ಯ ಉದ್ದೇಶ ಹಲ್ಲೆಗಾರರಿಂದ ದೂರವಿರುವ ಅವಕಾಶವನ್ನು ಸೃಷ್ಟಿಸುವುದು. ಪರಿಣಾಮಕಾರಿ ತಂತ್ರಗಳ ಆಧಾರ ಸ್ಥಂಬಗಳನ್ನು ರೂಪಿಸುವ ಕೆಲವು ಮೂಲ ತತ್ತ್ವಗಳು ಇಲ್ಲಿವೆ:
+            </p>
+            <p class="language-text" data-lang="ta" style="display: none;">
+                தப்பிக்கும் நுட்பங்களின் நோக்கம் தாக்குதலாளரிடமிருந்து தூரத்தை உருவாக்குவதே. மிகச்சிறந்த தப்பிக்கும் நுட்பங்களின் அடிப்படைத் தத்துவங்கள் சிலவற்றைப் பார்க்கலாம்:
+            </p>
+
+            <ul class="language-text" data-lang="en">
+                <li><strong>Leverage and Angles:</strong> Understanding how to use body leverage to break free from holds or grips. The key is to apply force at specific angles to exploit the weaknesses of an attacker.</li>
+                <li><strong>Target Vulnerable Areas:</strong> Focus on sensitive areas like the eyes, nose, throat, or groin to disorient the attacker. Even a brief distraction can provide an opportunity to escape.</li>
+                <li><strong>Distractions:</strong> Use verbal commands, sudden movements, or objects in your surroundings to create opportunities for escape. A loud shout or throwing an object can divert the attacker’s focus.</li>
+            </ul>
+            <ul class="language-text" data-lang="hi" style="display: none;">
+                <li><strong>लीवरेज और एंगल्स:</strong> पकड़ से मुक्त होने के लिए शरीर के लीवरेज का उपयोग करना सीखें। कुंजी है विशेष कोणों पर बल लगाना ताकि हमलावर की कमजोरियों का फायदा उठाया जा सके।</li>
+                <li><strong>कमजोर जगहों को निशाना बनाना:</strong> आँख, नाक, गला या कमर जैसे संवेदनशील क्षेत्रों पर ध्यान दें। यहां तक कि एक क्षणिक ध्यान भंग भी भागने का अवसर दे सकता है।</li>
+                <li><strong>ध्यान भटकाना:</strong> मौखिक कमांड, अचानक हरकतें, या आसपास की चीजों का उपयोग करें ताकि भागने का अवसर मिल सके। जोर से चिल्लाना या कोई वस्तु फेंकना हमलावर का ध्यान भटका सकता है।</li>
+            </ul>
+            <ul class="language-text" data-lang="kn" style="display: none;">
+                <li><strong>ಲೇವರೆಜ್ ಮತ್ತು ಕೋನಗಳು:</strong> ಹಿಡಿತದಿಂದ ಬಿಡಿಸಲು ದೇಹದ ಲೇವರೆಜ್ ಅನ್ನು ಬಳಸುವುದು. ಹಲ್ಲೆಗಾರರ ದುರ್ಬಲತೆಗಳನ್ನು ಹನನಿಸಲು ನಿರ್ದಿಷ್ಟ ಕೋನಗಳಲ್ಲಿ ಬಲವನ್ನು ಅನ್ವಯಿಸುವುದು ಮುಖ್ಯ.</li>
+                <li><strong>ದೌರ್ಬಲ್ಯ ಪ್ರದೇಶಗಳನ್ನು ಗುರಿಯಾಗಿಸಲು:</strong> ಕಣ್ಣುಗಳು, ಮೂಗು, ಕಂಠ ಅಥವಾ ತೊಡೆಯ ಮೇಲೆ ಗಮನಹರಿಸಿ. ಒಂದು ಕ್ಷಣದ ತೊಂದರೆ ಕೂಡ ಬಿಡುವಿಗೆ ಅವಕಾಶ ಕೊಡುತ್ತದೆ.</li>
+                <li><strong>ಗಮನ ಹರಿಸಲು:</strong> ಶಬ್ದದ ಆದೇಶಗಳು, ಆಕಸ್ಮಿಕ ಚಲನೆಗಳು, ಅಥವಾ ಸುತ್ತಲಿನ ವಸ್ತುಗಳನ್ನು ಬಳಸುವುದು ಬಿಡುವಿಗೆ ಅವಕಾಶ ಸೃಷ್ಟಿಸುತ್ತದೆ. ಗಟ್ಟಿಯಾಗಿ ಕೂಗುವುದು ಅಥವಾ ವಸ್ತುವನ್ನು ಎಸೆಯುವುದು ಹಲ್ಲೆಗಾರರ ಗಮನವನ್ನು ಹರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.</li>
+            </ul>
+            <ul class="language-text" data-lang="ta" style="display: none;">
+                <li><strong>நுட்பங்கள் மற்றும் கோணங்கள்:</strong> பிடியில் இருந்து விடுபட உடல் நுட்பங்களைப் பயன்படுத்திக் கொள்ள வேண்டும். குறிப்பிட்ட கோணங்களில் பலத்தைச் செயல்படுத்துவது தாக்குதலாளரின் பலவீனங்களைப் பயன்படுத்தி விடுபட உதவும்.</li>
+                <li><strong>பலவீனமான பகுதிகளை குறிவைக்கவும்:</strong> கண்கள், மூக்கு, தொண்டை, அல்லது குளியல் போன்ற பகுதிகளை குறிவைத்து தாக்கவும். சில நொடிகளுக்கான திசையமைப்பு கூட விடுபட உதவும்.</li>
+                <li><strong>திசையமைப்பு:</strong> வாய்மொழி கட்டளைகள், திடீர் நகர்வுகள், அல்லது சுற்றியுள்ள பொருட்களைப் பயன்படுத்தி தப்பிக்க வேண்டும். ஒரு சத்தமாக கூச்சல் விடுவது அல்லது ஒரு பொருளை எறிவது தாக்குதலாளரின் கவனத்தை திசையற்ற இடம் செய்யும்.</li>
+            </ul>
+
+            <h2 class="language-text" data-lang="en">Practical Techniques</h2>
+            <h2 class="language-text" data-lang="hi" style="display: none;">प्रायोगिक तकनीकें</h2>
+            <h2 class="language-text" data-lang="kn" style="display: none;">ಪ್ರಾಯೋಗಿಕ ತಂತ್ರಗಳು</h2>
+            <h2 class="language-text" data-lang="ta" style="display: none;">நடைமுறை நுட்பங்கள்</h2>
+
+            <p class="language-text" data-lang="en">
+                Some practical escape techniques include simple yet effective moves that anyone can learn. Practicing these regularly can improve your confidence and increase your ability to react effectively under pressure.
+            </p>
+            <p class="language-text" data-lang="hi" style="display: none;">
+                कुछ प्रायोगिक भागने की तकनीकों में सरल लेकिन प्रभावी चालें शामिल हैं जिन्हें कोई भी सीख सकता है। इन्हें नियमित रूप से अभ्यास करने से आपका आत्मविश्वास बढ़ेगा और दबाव में प्रभावी ढंग से प्रतिक्रिया देने की आपकी क्षमता बढ़ेगी।
+            </p>
+            <p class="language-text" data-lang="kn" style="display: none;">
+                ಕೆಲವು ಪ್ರಾಯೋಗಿಕ ತಂತ್ರಗಳಲ್ಲಿ ಸರಳ ಆದರೆ ಪರಿಣಾಮಕಾರಿ ಚಲನೆಗಳು ಸೇರಿವೆ, ಅದನ್ನು ಯಾರೂ ಕಲಿಯಬಹುದು. ಈ ತಂತ್ರಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಅಭ್ಯಾಸ ಮಾಡುವುದರಿಂದ ನಿಮ್ಮ ಆತ್ಮವಿಶ್ವಾಸ ಹೆಚ್ಚುತ್ತದೆ ಮತ್ತು ಒತ್ತಡದ ಹೊತ್ತಿನಲ್ಲಿ ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಪ್ರತಿಕ್ರಿಯಿಸುವ ನಿಮ್ಮ ಸಾಮರ್ಥ್ಯ ಹೆಚ್ಚುತ್ತದೆ.
+            </p>
+            <p class="language-text" data-lang="ta" style="display: none;">
+                சில நடைமுறை தப்பிக்கும் நுட்பங்களில் எளிமையான, ஆனால் விளைவான நகர்வுகள் உள்ளன, இதை யாரும் கற்றுக்கொள்ள முடியும். அவற்றை அடிக்கடி பயிற்சி செய்வது உங்கள் தன்னம்பிக்கையை அதிகரிக்கும்.
+            </p>
+
+            <ul class="language-text" data-lang="en">
+                <li><strong>Wrist Release:</strong> Rotate your wrist against the attacker's thumb to break free. The thumb is the weakest part of the grip, and rotating against it can help you release quickly.</li>
+                <li><strong>Bear Hug Escape:</strong> If grabbed from behind, use your elbows to strike the attacker's stomach or step on their foot. A sharp elbow strike can cause enough pain to make the attacker loosen their grip.</li>
+                <li><strong>Clothing Grab Defense:</strong> Pull the attacker's hands away or strike vulnerable points such as their wrist or fingers to escape quickly. Use your free hand to control their grip while creating an opportunity to run.</li>
+            </ul>
+            <ul class="language-text" data-lang="hi" style="display: none;">
+                <li><strong>कलाई रिलीज:</strong> हमलावर के अंगूठे के खिलाफ अपनी कलाई को घुमाएं ताकि पकड़ से मुक्त हो सकें। अंगूठा पकड़ का सबसे कमजोर हिस्सा होता है, और इसके खिलाफ घुमाने से आप जल्दी मुक्त हो सकते हैं।</li>
+                <li><strong>बेयर हग से बचाव:</strong> यदि पीछे से पकड़ा जाए, तो अपनी कोहनियों से हमलावर के पेट पर मारें या उसके पैर पर कदम रखें। तेज कोहनी से मारने से हमलावर को दर्द होता है और उसकी पकड़ ढीली पड़ सकती है।</li>
+                <li><strong>कपड़े की पकड़ से बचाव:</strong> हमलावर के हाथों को खींचें या उनकी कलाई या उंगलियों पर वार करें ताकि जल्दी से भाग सकें। भागने का अवसर बनाने के लिए अपने मुक्त हाथ से उनकी पकड़ को नियंत्रित करें।</li>
+            </ul>
+            <ul class="language-text" data-lang="kn" style="display: none;">
+                <li><strong>ಕೈಗಡಸು ಬಿಡಿ:</strong> ಹಲ್ಲೆಗಾರರ ಅಂಗುಲಿಗೆ ವಿರುದ್ಧವಾಗಿ ನಿಮ್ಮ ಕೈಯನ್ನು ತಿರುಗಿಸಿ. ಅಂಗುಲು ಹಿಡಿತದ ದುರ್ಬಲ ಭಾಗವಾಗಿದ್ದು, ಇದಕ್ಕೆ ವಿರುದ್ಧವಾಗಿ ತಿರುಗಿಸುವುದು ನಿಮಗೆ ತಕ್ಷಣ ಬಿಡಿಸಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.</li>
+                <li><strong>ಬೆಕ್ಕಿನ ಮುರಿಯುವಿಕೆ:</strong> ಹಿಂದಿನಿಂದ ಹಿಡಿದಾಗ, ನಿಮ್ಮ ಎಲ್ಬೊಗಳನ್ನು ಹಲ್ಲೆಗಾರರ ಹೊಟ್ಟೆಯಲ್ಲಿ ಬಡಿದುಕೊಳ್ಳಿ ಅಥವಾ ಅವರ ಕಾಲಿಗೆ ಹೆಜ್ಜೆಯಿಡಿ. ಎಲ್ಬೊ ಬಾರಿಸುವುದು ಸಾಕಷ್ಟು ನೋವುಂಟುಮಾಡುತ್ತದೆ ಮತ್ತು ಹಲ್ಲೆಗಾರರ ಹಿಡಿತವನ್ನು ಸಡಿಲಿಸುತ್ತದೆ.</li>
+                <li><strong>ಬಟ್ಟೆಯ ಹಿಡಿತ ನಿರೋಧನೆ:</strong> ಹಲ್ಲೆಗಾರರ ಕೈಗಳನ್ನು ಎಳೆದು ಅಥವಾ ಅವರ ಕೈಯ ಅಥವಾ ಬೆರಳುಗಳನ್ನು ಹೊಡೆಯುವ ಮೂಲಕ ತ್ವರಿತವಾಗಿ ಬಿಡಿಸಿಕೊಳ್ಳಿ. ಓಡುವ ಅವಕಾಶವನ್ನು ಪಡೆಯಲು ನಿಮ್ಮ ಮುಕ್ತ ಕೈಯನ್ನು ಅವರ ಹಿಡಿತವನ್ನು ನಿಯಂತ್ರಿಸಲು ಬಳಸಿ.</li>
+            </ul>
+            <ul class="language-text" data-lang="ta" style="display: none;">
+                <li><strong>மணிக்கட்டு விடுவிப்பு:</strong> தாக்குதலாளரின் கட்டையைக் கடக்க உங்களைத் திருப்பவும்.</li>
+                <li><strong>திடீர் மோசம் முறை:</strong> பாதையில் உங்கள் நேரத்தை ஒதுக்கவும்.</li>
+                <li><strong>தப்பிக்க வாய்ப்பு:</strong> ஒரு சக்தியை அடைந்தால், மிதிவைத் தவிர</li>
+            </ul>
+        </div>
         <img src="confrontataion.webp" alt="Self Defense Illustration">
-        <p>
-            Remember, the best way to stay safe is to avoid confrontation whenever possible. These techniques are a last resort and should be used when escape is your only option.
+        <p class="language-text" data-lang="en">
+            Remember, the best way to stay safe is to avoid confrontation whenever possible. These techniques are a last resort and should be used when escape is your only option. Practicing these moves regularly can help you react without hesitation, potentially saving your life in dangerous situations.
+        </p>
+        <p class="language-text" data-lang="hi" style="display: none;">
+            याद रखें, सुरक्षित रहने का सबसे अच्छा तरीका संघर्ष से बचना है। इन तकनीकों का उपयोग अंतिम विकल्प के रूप में करें। इन चालों का नियमित रूप से अभ्यास करने से आप बिना झिझक प्रतिक्रिया कर सकते हैं और खतरनाक स्थितियों में अपनी जान बचा सकते हैं।
+        </p>
+        <p class="language-text" data-lang="kn" style="display: none;">
+            ನೆನಪಿಡಿ, ನಿಮ್ಮನ್ನು ಸುರಕ್ಷಿತವಾಗಿರಿಸಲು ಸಾಂಘರ್ಷವನ್ನು ತಪ್ಪಿಸುವುದು ಉತ್ತಮ ಮಾರ್ಗವಾಗಿದೆ. ಈ ತಂತ್ರಗಳನ್ನು ಕೊನೆಯ ಮಾರ್ಗವಾಗಿ ಬಳಸಬೇಕು. ಈ ಚಲನಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಅಭ್ಯಾಸ ಮಾಡುವುದರಿಂದ ನೀವು ಹಿಂಜರಿಯದೆ ಪ್ರತಿಕ್ರಿಯಿಸಬಹುದು ಮತ್ತು ಅಪಾಯದ ಪರಿಸ್ಥಿತಿಗಳಲ್ಲಿ ನಿಮ್ಮ ಪ್ರಾಣವನ್ನು ಉಳಿಸಬಹುದು.
+        </p>
+        <p class="language-text" data-lang="ta" style="display: none;">
+            நீங்கள் பாதுகாப்பாக இருக்கிறீர்கள் என்பதை உறுதி செய்ய சண்டையைத் தவிர்க்கவும். இந்த தற்காப்பு முறைகள் ஒரு கடைசித் தப்பிக்க வாய்ப்பாகும். அவற்றை அடிக்கடி பயிற்சி செய்வது, ஆபத்தான சூழ்நிலைகளில் உங்கள் உயிரைக் காப்பாற்ற உதவலாம்.
         </p>
     </main>
     <footer>
         <p>&copy; 2024 Sahayak. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById("language-select").addEventListener("change", function () {
+            const selectedLang = this.value;
+            const texts = document.querySelectorAll(".language-text");
+            texts.forEach((text) => {
+                if (text.getAttribute("data-lang") === selectedLang) {
+                    text.style.display = "block";
+                } else {
+                    text.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
