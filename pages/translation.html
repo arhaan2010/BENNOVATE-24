@@ -3,196 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Management - Sahayak</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #004080;
-            color: white;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-        }
-        .title {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        .language-dropdown {
-            font-size: 1em;
-            padding: 5px;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-        .back-button {
-            color: white;
-            text-decoration: none;
-            font-size: 1em;
-            background-color: #003366;
-            padding: 8px 12px;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-        .back-button:hover {
-            background-color: #002244;
-        }
-        main {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #004080;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Translation Services - Sahayak</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <span class="title">Sahayak - Financial Management</span>
-            <a href="/pages/skills.html" class="back-button">&larr; Back to Skill Development</a>
-            <select id="language-select" class="language-dropdown">
-                <option value="en">English</option>
-                <option value="hi">हिन्दी</option>
-                <option value="kn">ಕನ್ನಡ</option>
-                <option value="ta">தமிழ்</option>
-            </select>
-        </div>
+        <nav class="navbar">
+            <div class="logo">Sahayak</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="/pages/translation.html">Translation</a></li>
+                <li><a href="/pages/Teaching%20Business.html">Teaching Business</a></li>
+                <li><a href="/pages/skills.html">Skill Development</a></li>
+                <li><a href="/pages/career.html">Career Tools</a></li>
+                <li><a href="/pages/courses.html">Courses & Certifications</a></li>
+                <li><a href="/pages/self-defense.html">Self Defense for Women</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <div id="article-content">
-            <!-- Introduction Section -->
-            <div class="section">
-                <h1 class="language-text" data-lang="en">Introduction to Financial Management</h1>
-                <h1 class="language-text" data-lang="hi" style="display: none;">वित्तीय प्रबंधन का परिचय</h1>
-                <h1 class="language-text" data-lang="kn" style="display: none;">ಹಣಕಾಸಿನ ನಿರ್ವಹಣೆಗೆ ಪರಿಚಯ</h1>
-                <h1 class="language-text" data-lang="ta" style="display: none;">நிதி மேலாண்மையின் அறிமுகம்</h1>
+        <!-- Hero Section -->
+        <section id="hero" class="content-section">
+            <h1 class="language-text">
+                <span class="lang en">Translation Services</span>
+                <span class="lang hi">अनुवाद सेवाएँ</span>
+                <span class="lang kn">ಅನುವಾದ ಸೇವೆಗಳು</span>
+                <span class="lang ta">மொழிபெயர்ப்பு சேவைகள்</span>
+            </h1>
+            <p class="language-text">
+                <span class="lang en">Bridge communication gaps with our range of translation and localization services.</span>
+                <span class="lang hi">हमारी अनुवाद और स्थानीयकरण सेवाओं की श्रृंखला के साथ संवाद अंतराल को पाटें।</span>
+                <span class="lang kn">ನಮ್ಮ ಅನುವಾದ ಮತ್ತು ಸ್ಥಳೀಯೀಕರಣ ಸೇವೆಗಳ ಶ್ರೇಣಿಯೊಂದಿಗೆ ಸಂವಹನ ಅಂತರವನ್ನು ಅಡ್ಡಗೋಚಿಸಿ.</span>
+                <span class="lang ta">எங்கள் மொழிபெயர்ப்பு மற்றும் உள்ளூர் சரிசெய்தல் சேவைகளின் வரம்புகளை பயன்படுத்தி தொடர்பு இடைவெளிகளை நிரப்பவும்.</span>
+            </p>
+        </section>
 
-                <p class="language-text" data-lang="en">
-                    Financial management is an essential skill that everyone needs to master, regardless of their occupation or stage in life. It involves organizing, planning, and controlling one's finances to ensure security and growth. Proper financial management helps individuals achieve their life goals, live comfortably, and be prepared for unexpected expenses.
-                </p>
-                <p class="language-text" data-lang="hi" style="display: none;">
-                    वित्तीय प्रबंधन एक आवश्यक कौशल है जिसे सभी को सीखना चाहिए, चाहे उनका व्यवसाय या जीवन का कोई भी चरण हो। इसमें अपनी वित्तीय स्थिति को संगठित करना, योजना बनाना, और नियंत्रित करना शामिल है ताकि सुरक्षा और विकास सुनिश्चित हो सके। उचित वित्तीय प्रबंधन लोगों को अपने जीवन के लक्ष्यों को प्राप्त करने, आराम से जीने, और अप्रत्याशित खर्चों के लिए तैयार रहने में मदद करता है।
-                </p>
-                <p class="language-text" data-lang="kn" style="display: none;">
-                    ಹಣಕಾಸಿನ ನಿರ್ವಹಣೆ ಪ್ರತಿಯೊಬ್ಬರೂ ಆಯಾ ವೃತ್ತಿ ಅಥವಾ ಜೀವನದ ಹಂತಕ್ಕೂ ಅತಿಸಹಜವಾಗಿ ಕಲಿಯಬೇಕಾದ ಕೌಶಲ್ಯವಾಗಿದೆ. ಇದರಲ್ಲಿ ತನ್ನ ಹಣಕಾಸನ್ನು ಸಂಘಟಿಸುವುದು, ಯೋಜಿಸುವುದು ಮತ್ತು ನಿಯಂತ್ರಿಸುವುದು ಸೇರಿವೆ, ಇದು ಭದ್ರತೆ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಖಚಿತಪಡಿಸುತ್ತದೆ. ಸರಿಯಾದ ಹಣಕಾಸಿನ ನಿರ್ವಹಣೆ ವ್ಯಕ್ತಿಗಳಿಗೆ ಅವರ ಜೀವನದ ಗುರಿಗಳನ್ನು ಸಾಧಿಸಲು, ಆರಾಮವಾಗಿ ಬದುಕಲು ಮತ್ತು ಅನಿರೀಕ್ಷಿತ ವೆಚ್ಚಗಳಿಗೆ ಸಿದ್ದರಾಗಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
-                </p>
-                <p class="language-text" data-lang="ta" style="display: none;">
-                    நிதி மேலாண்மை என்பது அனைத்து தரப்பு நபர்களும், அவர்களின் தொழில் துறையோ அல்லது வாழ்க்கை நிலையோ எந்த நிலை என்பதையும் பொருட்படுத்தாமல் கற்றுக்கொள்ள வேண்டிய ஒரு முக்கிய திறன் ஆகும். இதில் நிதி பணிகளை ஒழுங்குபடுத்துதல், திட்டமிடல், மற்றும் கட்டுப்படுத்துதல் போன்றவை அடங்கும், இது பாதுகாப்பையும் வளர்ச்சியையும் உறுதி செய்யும். சிறந்த நிதி மேலாண்மை ஒரு நபருக்கு வாழ்க்கை குறிக்கோள்களை அடைவதில், நன்றாக வாழ்வதிலும், எதிர்பாராத செலவுகளை சந்திக்க தயார் இருக்கவும் உதவுகிறது.
-                </p>
+        <!-- Translation Services Section -->
+        <section id="services" class="content-section">
+            <div class="capabilities-grid">
+                <div class="card">
+                    <h3 class="language-text">
+                        <span class="lang en">Language Translation</span>
+                        <span class="lang hi">भाषा अनुवाद</span>
+                        <span class="lang kn">ಭಾಷೆ ಅನುವಾದ</span>
+                        <span class="lang ta">மொழி மொழிபெயர்ப்பு</span>
+                    </h3>
+                    <p class="language-text">
+                        <span class="lang en">Translate documents, websites, and more into multiple languages with cultural relevance.</span>
+                        <span class="lang hi">दस्तावेज़, वेबसाइट और अधिक सामग्री का सटीकता और सांस्कृतिक प्रासंगिकता के साथ अनुवाद करें।</span>
+                        <span class="lang kn">ದಾಖಲೆಗಳು, ವೆಬ್‌ಸೈಟ್‌ಗಳು ಮತ್ತು ಇತರವನ್ನು ಸರಿಯಾದ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಸೂಕ್ತತೆಯೊಂದಿಗೆ ಭಾಷಾಂತರಿಸಿ.</span>
+                        <span class="lang ta">ஆவணங்கள், இணையதளங்கள் மற்றும் பலவற்றை மொழிபெயர்த்து கலாச்சார பொருத்தத்துடன் வழங்கவும்.</span>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="language-text">
+                        <span class="lang en">Real-Time Interpretation</span>
+                        <span class="lang hi">रीयल-टाइम व्याख्या</span>
+                        <span class="lang kn">ನೇರ ಸಮಯದಲ್ಲಿ ವಿವರಣೆ</span>
+                        <span class="lang ta">உண்மை நேர விளக்கம்</span>
+                    </h3>
+                    <p class="language-text">
+                        <span class="lang en">Provide real-time interpretation for conferences, meetings, and webinars.</span>
+                        <span class="lang hi">सम्मेलनों, बैठकों और वेबिनारों के लिए रीयल-टाइम व्याख्या प्रदान करें।</span>
+                        <span class="lang kn">ಕಾನ್ಫರೆನ್ಸುಗಳು, ಸಭೆಗಳು ಮತ್ತು ವೆಬಿನಾರ್‌ಗಳಿಗೆ ನೇರ ಸಮಯದಲ್ಲಿ ವಿವರಣೆ ಒದಗಿಸಿ.</span>
+                        <span class="lang ta">கான்பரன்சுகள், கூட்டங்கள் மற்றும் வெபினார்களுக்கு நேரடி விளக்கங்களை வழங்கவும்.</span>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="language-text">
+                        <span class="lang en">Content Localization</span>
+                        <span class="lang hi">सामग्री स्थानीयकरण</span>
+                        <span class="lang kn">ವಿಷಯ ಸ್ಥಳೀಯೀಕರಣ</span>
+                        <span class="lang ta">உள்ளடக்கம் உள்ளூர் சரிசெய்தல்</span>
+                    </h3>
+                    <p class="language-text">
+                        <span class="lang en">Localize digital content for specific regions, ensuring engagement.</span>
+                        <span class="lang hi">डिजिटल सामग्री को विशिष्ट क्षेत्रों के लिए स्थानीयकरण करें, जिससे भागीदारी सुनिश्चित हो।</span>
+                        <span class="lang kn">ನಿಮ್ಮ ಡಿಜಿಟಲ್ ವಿಷಯವನ್ನು ನಿರ್ದಿಷ್ಟ ಪ್ರದೇಶಗಳಿಗಾಗಿ ಸ್ಥಳೀಯೀಕರಿಸಿ.</span>
+                        <span class="lang ta">உங்கள் டிஜிட்டல் உள்ளடக்கத்தை குறிப்பிட்ட பகுதிகளுக்கு உள்ளூர் சரிசெய்தல் செய்யவும்.</span>
+                    </p>
+                </div>
             </div>
-
-            <!-- Budgeting Section -->
-            <div class="section">
-                <h2 class="language-text" data-lang="en">1. Budgeting</h2>
-                <h2 class="language-text" data-lang="hi" style="display: none;">1. बजट बनाना</h2>
-                <h2 class="language-text" data-lang="kn" style="display: none;">1. ಬಜೆಟ್</h2>
-                <h2 class="language-text" data-lang="ta" style="display: none;">1. பட்ஜெட்டிங்</h2>
-
-                <p class="language-text" data-lang="en">
-                    Budgeting is the cornerstone of sound financial management. A well-crafted budget helps track income and expenses, ensuring that you live within your means. It allows you to identify where your money is going and make adjustments to maximize savings and achieve your financial goals.
-                    <br><br>
-                    **Steps to Create an Effective Budget**:
-                    <ul>
-                        <li><strong>Identify Income:</strong> Include all sources of income, such as salary, freelance work, and passive income like interest or dividends.</li>
-                        <li><strong>Track Expenses:</strong> Categorize your expenses into fixed (rent, utilities) and variable (entertainment, dining out).</li>
-                        <li><strong>Set Financial Goals:</strong> Determine what you want to achieve, such as paying off debt, saving for a vacation, or building an emergency fund.</li>
-                        <li><strong>Allocate Resources:</strong> Ensure that every dollar has a purpose—prioritize needs over wants.</li>
-                        <li><strong>Adjust as Needed:</strong> Revisit your budget regularly and make adjustments to accommodate changes in income or expenses.</li>
-                    </ul>
-                </p>
-                <!-- Hindi Translation -->
-                <p class="language-text" data-lang="hi" style="display: none;">
-                    बजट बनाना वित्तीय प्रबंधन का मूल है। एक अच्छी तरह से तैयार किया गया बजट आय और खर्चों को ट्रैक करने में मदद करता है, जिससे यह सुनिश्चित होता है कि आप अपनी सीमाओं में रहकर खर्च करें। यह आपको यह समझने में मदद करता है कि आपका पैसा कहां जा रहा है और बचत को अधिकतम करने और अपने वित्तीय लक्ष्यों को प्राप्त करने के लिए समायोजन करने की अनुमति देता है।
-                    <br><br>
-                    **एक प्रभावी बजट बनाने के कदम**:
-                    <ul>
-                        <li><strong>आय की पहचान करें:</strong> आय के सभी स्रोतों को शामिल करें, जैसे वेतन, फ्रीलांस काम, और ब्याज या डिविडेंड जैसी निष्क्रिय आय।</li>
-                        <li><strong>खर्चों को ट्रैक करें:</strong> अपने खर्चों को स्थिर (किराया, उपयोगिता) और परिवर्तनीय (मनोरंजन, बाहर भोजन करना) में विभाजित करें।</li>
-                        <li><strong>वित्तीय लक्ष्य निर्धारित करें:</strong> निर्धारित करें कि आप क्या प्राप्त करना चाहते हैं, जैसे ऋण चुकाना, अवकाश के लिए बचत करना, या आपातकालीन निधि बनाना।</li>
-                        <li><strong>संसाधनों को आवंटित करें:</strong> सुनिश्चित करें कि प्रत्येक डॉलर का एक उद्देश्य है—आवश्यकताओं को इच्छाओं पर प्राथमिकता दें।</li>
-                        <li><strong>आवश्यकतानुसार समायोजन करें:</strong> अपने बजट की नियमित रूप से समीक्षा करें और आय या खर्चों में बदलाव को समायोजित करने के लिए आवश्यकतानुसार परिवर्तन करें।</li>
-                    </ul>
-                </p>
-                <!-- Kannada Translation -->
-                <p class="language-text" data-lang="kn" style="display: none;">
-                    ಬಜೆಟ್ ಹಾಕುವುದು ಹಣಕಾಸಿನ ನಿರ್ವಹಣೆಯ ಮೂಲಭೂತ ಭಾಗವಾಗಿದೆ. ಚೆನ್ನಾಗಿ ರೂಪಿಸಲಾದ ಬಜೆಟ್ ಆದಾಯ ಮತ್ತು ಖರ್ಚುಗಳನ್ನು ಹಿಂಬಾಲಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ, ಇದು ನೀವು ನಿಮ್ಮ ಸಾಮರ್ಥ್ಯದೊಳಗೆ ವಾಸಿಸುವುದನ್ನು ಖಚಿತಪಡಿಸುತ್ತದೆ. ಇದು ನಿಮ್ಮ ಹಣ ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತಿದೆ ಎಂಬುದನ್ನು ಗುರುತಿಸಲು ಮತ್ತು ಉಳಿತಾಯವನ್ನು ಗರಿಷ್ಠಗೊಳಿಸಲು ಮತ್ತು ನಿಮ್ಮ ಹಣಕಾಸಿನ ಗುರಿಗಳನ್ನು ಸಾಧಿಸಲು ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಮಾಡಲು ಅನುಮತಿಸುತ್ತದೆ.
-                    <br><br>
-                    **ಪ್ರಭಾವಶಾಲಿ ಬಜೆಟ್ ರಚಿಸಲು ಹೆಜ್ಜೆಗಳು**:
-                    <ul>
-                        <li><strong>ಆದಾಯವನ್ನು ಗುರುತಿಸಿ:</strong> ವೇತನ, ಫ್ರೀಲಾನ್ಸ್ ಕೆಲಸ ಮತ್ತು ಬಡ್ಡಿ ಅಥವಾ ಡಿವಿಡೆಂಡ್‌ಗಳಂತಹ ನಿರ್ಧಿಷ್ಟ ಆದಾಯದಂತಹ ಎಲ್ಲಾ ಆದಾಯ ಮೂಲಗಳನ್ನು ಸೇರಿಸಿ.</li>
-                        <li><strong>ಖರ್ಚುಗಳನ್ನು ಹಿಂಬಾಲಿಸಿ:</strong> ನಿಮ್ಮ ಖರ್ಚುಗಳನ್ನು ಸ್ಥಿರ (ಭಾಡಿ, ಉಪಯುಕ್ತತೆಗಳು) ಮತ್ತು ಬದಲಾಗುವ (ಮನರಂಜನೆ, ಹೊರಗೊಮ್ಮಲು) ಎಂದು ವರ್ಗೀಕರಿಸಿ.</li>
-                        <li><strong>ಹಣಕಾಸಿನ ಗುರಿಗಳನ್ನು ಹೊಂದಿಸಿ:</strong> ನೀವು ಏನು ಸಾಧಿಸಬೇಕೆಂದು ನಿರ್ಧರಿಸಿ, ಉದಾಹರಣೆಗೆ ಸಾಲವನ್ನು ತೀರಿಸೋದು, ರಜೆಗೆ ಉಳಿತಾಯ ಮಾಡೋದು, ಅಥವಾ ತುರ್ತು ನಿಧಿಯನ್ನು ನಿರ್ಮಿಸುವುದು.</li>
-                        <li><strong>ಸಂಪನ್ಮೂಲಗಳನ್ನು ಹಂಚಿಕೆ ಮಾಡಿ:</strong> ಪ್ರತಿಯೊಂದು ಡಾಲರ್‌ಗೆ ಒಂದು ಉದ್ದೇಶವಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ—ಬಯಕೆಗಳಿಗಿಂತ ಅಗತ್ಯಗಳನ್ನು ಮೊದಲಿಗರಾಗಿ ಗುರಿಯಿಟ್ಟು.</li>
-                        <li><strong>ಆವಶ್ಯಕತೆಯಾದರೆ ಹೊಂದಾಣಿಕೆ ಮಾಡಿ:</strong> ನಿಮ್ಮ ಬಜೆಟ್ ಅನ್ನು ನಿಯಮಿತವಾಗಿ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಆದಾಯ ಅಥವಾ ಖರ್ಚುಗಳಲ್ಲಿ ಬದಲಾವಣೆಯನ್ನು ಹೊಂದಿಸುವುದಕ್ಕಾಗಿ ಅವಶ್ಯಕತೆಯಂತೆ ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಮಾಡಿ.</li>
-                    </ul>
-                </p>
-                <!-- Tamil Translation -->
-                <p class="language-text" data-lang="ta" style="display: none;">
-                    பட்ஜெட்டிங் என்பது ஆரோக்கியமான நிதி மேலாண்மையின் அடிப்படையாகும். நன்றாக உருவாக்கப்பட்ட பட்ஜெட் வருமானம் மற்றும் செலவுகளை பதிவு செய்ய உதவுகிறது, இது உங்கள் திறனுக்குள் வாழ்வதை உறுதிசெய்கிறது. இது உங்கள் பணம் எங்கே செல்கிறது என்பதை அடையாளம் காட்டவும், சேமிப்பை அதிகப்படுத்தவும், உங்கள் நிதி குறிக்கோள்களை அடையவும் மாற்றங்களைச் செய்ய அனுமதிக்கிறது.
-                    <br><br>
-                    **ஒரு பயனுள்ள பட்ஜெட் உருவாக்குவதற்கான படிகள்**:
-                    <ul>
-                        <li><strong>வருமானத்தை அடையாளம் காணவும்:</strong> சம்பளம், வெளிப்பணி வேலை, வட்டி அல்லது பங்குகளுடன் கூடிய நிதி வருமானம் போன்ற அனைத்து வருமான மூலங்களையும் சேர்த்துக்கொள்ளவும்.</li>
-                        <li><strong>செலவுகளை பதிவு செய்யவும்:</strong> உங்கள் செலவுகளை நிரந்தர (வாடகை, பயன்பாடுகள்) மற்றும் மாற்றமாவதான (பொழுதுபோக்கு, வெளியே உணவு) என்று வகைப்படுத்துங்கள்.</li>
-                        <li><strong>நிதி குறிக்கோள்களை அமைக்கவும்:</strong> கடன் திருப்பம் செய்ய அல்லது ஓய்வு பெறக்கூடிய நிதி வரை உங்களின் பொருள் அமைத்தலுக்கான திட்டங்களை மாற்றுங்கள்.</li>
-                        <li><strong>வளங்களை ஒதுக்குதல்:</strong> ஒவ்வொரு ரூபாயுக்கும் ஒரு நோக்கம் இருப்பதை உறுதிப்படுத்துங்கள்—தேவைகளை விருப்பங்களை விட முன்னுரிமைப்படுத்தவும்.</li>
-                        <li><strong>தேவையின்படி சரிசெய்யவும்:</strong> உங்கள் பட்ஜெட்டை அடிக்கடி பரிசீலிக்கவும் மற்றும் வருமானம் அல்லது செலவுகளில் ஏற்பட்ட மாற்றங்களை சீரமைக்கவும்.</li>
-                    </ul>
-                </p>
-            </div>
-
-            <!-- Continue adding other sections similarly (Saving, Investing, Risk Management, Debt Management, etc.) -->
-        </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Sahayak. All rights reserved.</p>
     </footer>
 
-    <script>
-    document.getElementById('language-select').addEventListener('change', function () {
-        const selectedLanguage = this.value;
-        document.querySelectorAll('.language-text').forEach(function (element) {
-            if (element.dataset.lang === selectedLanguage) {
-                element.style.display = 'block';
-            } else {
-                element.style.display = 'none';
-            }
-        });
-    });
-
-    // Ensure only English is visible by default on page load
-    window.addEventListener('load', function () {
-        const selectedLanguage = document.getElementById('language-select').value;
-        document.querySelectorAll('.language-text').forEach(function (element) {
-            if (element.dataset.lang === selectedLanguage) {
-                element.style.display = 'block';
-            } else {
-                element.style.display = 'none';
-            }
-        });
-    });
-</script>
-
+    <script src="../languages.js"></script>
 </body>
 </html>
