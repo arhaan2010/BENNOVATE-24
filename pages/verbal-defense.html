@@ -136,4 +136,39 @@
                 ಮೌಖಿಕ ರಕ್ಷಣಾ ಒಂದು ಮುಖ್ಯ ಕೌಶಲ್ಯವಾಗಿದೆ, ಇದು ಸಾಧ್ಯವಿರುವ ಅಪಾಯಕರ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ದೈಹಿಕ ಹಿಂಸೆಗೆ ತಿರುಗುವುದಕ್ಕೆ ಮುನ್ನ ಮೌಖಿಕವಾಗಿ ಮುಕ್ತಾಯಗೊಳಿಸುವಿಕೆ ಆಗಿದೆ. ಬಲವಾದ ಮತ್ತು ಧೈರ್ಯಶಾಲಿ ಧ್ವನಿಯನ್ನು ಬಳಸಿಕೊಂಡು, ವ್ಯಕ್ತಿಗಳು ಹಲ್ಲೆಗಾರರನ್ನು ಹತೋಟಿಗೆ ತರುವ, ಗಡಿಗಳನ್ನು ಸ್ಥಾಪಿಸುವ, ಮತ್ತು ಪರಿಪೂರ್ಣವಾಗಿ ಇತರರೊಂದಿಗೆ ಸಂವಹನ ಮಾಡಬಹುದು.
             </p>
             <p class="language-text" data-lang="ta" style="display: none;">
-                வாய் மூலம் பாதுகாப்பு என்பது முக்கியமான திறனாகும், இது அச்சுறுத்தலான நிலையைத் தாக்குதல் violence என மாற்றும் முன்னர் அதைத் தடுக்க வாய் வழி நெருக்கமாக பயன்படுத்துகின்றது. வலிமையான மற்றும் தன்னம்பிக்கையான குரல் மூலம், தாக்குதல் முடியும் தன்மை
+                வாய் மூலம் பாதுகாப்பு என்பது முக்கியமான திறனாகும், இது அச்சுறுத்தலான நிலையைத் தாக்குதல் violence என மாற்றும் முன்னர் அதைத் தடுக்க வாய் வழி நெருக்கமாக பயன்படுத்துகின்றது. வலிமையான மற்றும் தன்னம்பிக்கையான குரல் மூலம், தாக்குதல் முடியும் தன்மை                வலிமையான மற்றும் தன்னம்பிக்கையான குரல் மூலம், தாக்குதலாளரைத் தடுக்கவும், எல்லைகளை அமைக்கவும் மற்றும் பார்த்திருக்கும் மற்றவர்களுடன் தெளிவாகத் தொடர்புகொள்ளவும் முடியும்.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sahayak. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('language-select').addEventListener('change', function () {
+            const selectedLanguage = this.value;
+            document.querySelectorAll('.language-text').forEach(function (element) {
+                if (element.dataset.lang === selectedLanguage) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        });
+
+        // Ensure only English is visible by default on page load
+        window.addEventListener('load', function () {
+            const selectedLanguage = document.getElementById('language-select').value;
+            document.querySelectorAll('.language-text').forEach(function (element) {
+                if (element.dataset.lang === selectedLanguage) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
